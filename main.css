@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.modal__button {
+    display: block;
+    background-color: rgb(77, 64, 252);
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 30px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__header {
+    position: left;
+    padding: 10px 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+h2 {
+    font-size: 24px;
+    color: rgb(150, 50, 150);
+}
+
+.close__btn {
+    float: right;
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal__body {
+    padding: 30px 20px;
+}
+
+.buttonok {
+    display: inline;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 6px 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.okay__btn {
+    background-color: rgb(62, 192, 62);
+}
+
+.cancel__btn {
+    background-color: rgb(209, 36, 36);
+}
+
+.modal__footer {
+    padding: 60px 20px;
+}
+
+.button__container {
+    float: right;
+}
+
+.modal__inner {
+    width: 50%;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 5px 10px 10px rgb(35, 35, 35);
+    margin: 20% auto;
+  }
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+   }
+
+@media screen and (max-width: 560px) {
+    .modal__inner {width: 100%;
+    }}
+
+@keyframes fadein {
+    from { opacity: 0}
+    to { opacity: 1}
+}
+
+@keyframes fadeout {
+    from { opacity: 1}
+    to { opacity: 0}
+}
+
+.fadein {
+    animation: fadein 1s;
+}
+
+.fadeout {
+    animation: fadeout 1s;
+}
